@@ -1,37 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <title>Bachkouta</title>
-  </head>
-  <!--topnav -->
-  <nav class="topNav">
-    <p id="title">Bachkouta</p>
-    <div class="navItems">
-        
-        <input id="search" type="search" value="SEARCH..." > <i class="fa fa-search"></i></input>
-        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+</head>
+<!--topnav -->
+
+
+<body>
+    <nav class="topNav">
+        <p id="title">Bachkouta</p>
+        <div class="navItems">
+
+            <input id="search" type="search" value="SEARCH..."> <i class="fa fa-search"></i></input>
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+        </div>
+
+    </nav>
+    <!--nav -->
+    <nav class="nav_navBar">
+        <ul class="navList">
+            <li id="home">HOME</li>
+            <li id="home">SHOP</li>
+            <li id="home">ABOUT ME</li>
+            <li id="home">CONTACT</li>
+        </ul>
+    </nav>
+    <section class="heroSeaction">
+        <img id="backgroundImg" src="./assets/background.png" alt="">
+        <div class="CallToAction">
+            <p id="heroP"> 100% NATURAL <br /> HOMEMADE FRESH COOKIES</p>
+            <button id="heroBtn"> order NOW</button>
+        </div>
+    </section>
+    <section class="BestSellers">
+        <h2 id="bestSellerTitle"> BEST SELLERS</h2>
+        <div class="bestSeller">
+            <img id="cookies" src="./assets/lemon cookie.jpg" alt="lemon" />
+            <img id="cookies" src="./assets/oreo.jpg" alt="oreo" />
+            <img id="cookies" src="./assets/lotus.jpg" alt="lotus" />
+        </div>
+    </section>
+
+    <section class="Cookies"></section>
+    <div class="Allcookies">
+        <h3 id="getAll">ALL COOKIES</h3>
+        <p id="getAll">FOLLOW ME FOR MORE BITES</p>
     </div>
-    
-  </nav>
-  <!--nav -->
-  <nav class="nav_navBar">
-    <ul class="navList">
-        <li>HOME</li>
-        <li>SHOP</li>
-        <li>ABOUT ME</li>
-        <li>CONTACT</li>
-      </ul>
-  </nav>
-  <section class="heroSeaction">
-    <p id="heroP"> 100% NATURAL <br/> HOMEMADE FRESH COOKIES</p>
-    <button id="heroBtn"> SHOP NOW</button>
-    
-  </section>
-  <section class="HeroSeaction"></section>
-  <body></body>
+    <div class="Cookies_List">
+        <div>
+            <img id="product" src="./assets/332340187_5868929159857206_2814745815983228390_n.webp">
+            <p id="price"> 3600 DT</p>
+        </div>
+        <div>
+            <img id="product" src="./assets/335598893_901112211228583_1819133099813035427_n.webp">
+            <p id="price"> 4500 DT </p>
+        </div>
+        <div>
+            <img id="product" src="./assets/oreo.jpg">
+            <p id="price"> 4500 DT </p>
+        </div>
+        <div>
+            <img id="product" src="./assets/lemon cookie.jpg">
+            <p id="price"> 4000 DT</p>
+        </div>
+        <div>
+            <img id="product" src="./assets/lotus.jpg">
+            <p id="price"> 6000 DT</p>
+        </div>
+        <div>
+            <img id="product" src="./assets/339686413_164924926466530_220648748350103497_n.webp">
+            <p> 25000 DT </p>
+        </div>
+    </div>
+    <div class="formContainer">
+        <i id="closeIcon" class="fa fa-close"></i>
+        <form class="Form">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Name.."><br>
+            <label for="lname">adress:</label><br>
+            <input type="text" id="lname" name="lname" value="adress"><br><br>
+            <label for="lname">phone Number:</label><br>
+            <input type="text" id="lname" name="lname" value="phone Number"><br><br>
+
+            <label for="cookies">Choose a cookie:</label>
+            <select id="cookies" name="cookies">
+                <option value="cookies">cookies:</option>
+                <option value="red velvet">red velvet</option>
+                <option value="oreo">oreo</option>
+                <option value="snickers">snickers</option>
+                <option value="brownies">brownies</option>
+                <option value="cookie_cake">cookie_cake</option>
+                <option value="lemon">lemon</option>
+                <option value="bounty">bounty</option>
+                <option value="Lotus">Lotus</option>
+                <option value="choclat_chips">choclat_chips</option>
+            </select>
+
+        </form>
+        <input id="formCookie" type="submit" value="Submit">
+    </div>
+
+    <div class="order">
+        <button id="order">make you order</button>
+    </div>
+    <footer>
+        <div>
+            <h4>SHOP</h4>
+            <ul class="about">
+                <li>ABOUT</li>
+                <li>FAQ</li>
+                <li>SHIPPING/PICKUP</li>
+                <li>STORE POLICY</li>
+                <li>CONTACT US</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3> ADRESS</h3>
+            <p> City khathra </p>
+        </div>
+        <div>
+            <h3>GET IT FRESH:</h3>
+            <div class="footerBtn">
+                <input type="email" value="Enter your e-mail here ..">
+                <button type="submit"> SUBSCRIBE NOW</button>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
 </html>

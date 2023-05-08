@@ -5,9 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="./assets/logo.jpg" />
     <title>Bachkouta</title>
 </head>
 <!--topnav -->
@@ -19,17 +21,31 @@
         <div class="navItems">
 
             <input id="search" type="search" value="SEARCH..."> <i class="fa fa-search"></i></input>
-            <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+            <i id="shoppingCart" class="fa fa-shopping-cart" style="font-size:24px"></i>
+            <div class="dropdown">
+                <i id="closeDrop" class="fa fa-close"></i>
+
+            </div>
+
+
         </div>
 
     </nav>
     <!--nav -->
     <nav class="nav_navBar">
         <ul class="navList">
-            <li id="home">HOME</li>
-            <li id="home">SHOP</li>
-            <li id="home">ABOUT ME</li>
-            <li id="home">CONTACT</li>
+            <a href="#title">
+                <li id="home">HOME</li>
+            </a>
+            <a href="#getAll">
+                <li id="home">SHOP</li>
+            </a>
+            <a href="#aboutUS">
+                <li id="home">ABOUT Us</li>
+            </a>
+            <a href="#Contact">
+                <li id="home">CONTACT</li>
+            </a>
         </ul>
     </nav>
     <section class="heroSeaction">
@@ -47,38 +63,89 @@
             <img id="cookies" src="./assets/lotus.jpg" alt="lotus" />
         </div>
     </section>
+    <section id="aboutUS">
 
+        <h2 id="aboutBachkouta">About Us</h2>
+        <div class="aboutUsContainer">
+
+            <p id="aboutUsTxt">Welcome to our little corner of cookie heaven! We are a small business dedicated to
+                bringing
+                you the most
+                delicious cookies you've ever tasted. Our cookies are made with only the finest ingredients and baked
+                fresh
+                every
+                day, so you can enjoy them at their absolute best.
+                Our passion for cookies started as a hobby, baking for friends and family, but soon turned into a
+                business
+                when we
+                realized how much joy our cookies brought to people's lives. We take pride in our work and strive to
+                create
+                the
+                perfect cookie experience for each and every customer.
+                Whether you're looking for a sweet treat for yourself or a gift for a loved one, we have a cookie for
+                every
+                occasion. From classic chocolate chip to exotic flavors like lavender and Earl Grey, we've got something
+                for
+                everyone.
+                Thank you for choosing us as your cookie destination. We look forward to serving you!
+            </p>
+            <img id="cookieCake"
+                src="https://assets3.cbsnewsstatic.com/hub/i/r/2020/02/17/98d2094a-776b-42e6-80c8-f84d9cf7abea/thumbnail/1200x630/f3f43805cdbbf9e78eea6ef85cf2cd4e/S120709589.jpg">
+        </div>
+
+
+
+    </section>
     <section class="Cookies"></section>
     <div class="Allcookies">
-        <h3 id="getAll">ALL COOKIES</h3>
-        <p id="getAll">FOLLOW ME FOR MORE BITES</p>
+        <h3 id="getAll">SHOP</h3>
+
     </div>
     <div class="Cookies_List">
-        <div>
-            <img id="product" src="./assets/332340187_5868929159857206_2814745815983228390_n.webp">
-            <p id="price"> 3600 DT</p>
+
+        <div class="product">
+            <img src="./assets/332340187_5868929159857206_2814745815983228390_n.webp" alt="Redvelvet">
+            <p>Redvelvet</p>
+            <p>3600</p>
+            <button class="add-to-cart" product_id="1">Add to Cart</button>
         </div>
-        <div>
-            <img id="product" src="./assets/335598893_901112211228583_1819133099813035427_n.webp">
-            <p id="price"> 4500 DT </p>
+        <div class="product">
+            <img src="./assets/335598893_901112211228583_1819133099813035427_n.webp" alt="Sneakers">
+            <p>Sneakers</p>
+            <p>4500</p>
+            <button class="add-to-cart" product_id="2">Add to Cart</button>
         </div>
-        <div>
-            <img id="product" src="./assets/oreo.jpg">
-            <p id="price"> 4500 DT </p>
+        <div class="product">
+            <img src="./assets/339686413_164924926466530_220648748350103497_n.webp" alt="Cookie Cake">
+            <p>Cookie Cake</p>
+            <p>25000</p>
+            <button class="add-to-cart" product_id="3">Add to Cart</button>
         </div>
-        <div>
-            <img id="product" src="./assets/lemon cookie.jpg">
-            <p id="price"> 4000 DT</p>
+        <div class="product">
+            <img src="./assets/lemon cookie.jpg" alt="Lemon">
+            <p>Lemon</p>
+            <p>4000</p>
+            <button class="add-to-cart" product_id="4">Add to Cart</button>
         </div>
-        <div>
-            <img id="product" src="./assets/lotus.jpg">
-            <p id="price"> 6000 DT</p>
+        <div class="product">
+            <img src="./assets/lotus.jpg" alt="Lotus">
+            <p>Lotus</p>
+            <p>6000</p>
+            <button class="add-to-cart" product_id="5">Add to Cart</button>
         </div>
-        <div>
-            <img id="product" src="./assets/339686413_164924926466530_220648748350103497_n.webp">
-            <p> 25000 DT </p>
+        <div class="product">
+            <img src="./assets/oreo.jpg" alt="Oreo">
+            <p>Oreo</p>
+            <p>4500</p>
+            <button class="add-to-cart" product_id="6">Add to Cart</button>
         </div>
+
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
     <div class="formContainer">
         <i id="closeIcon" class="fa fa-close"></i>
         <form class="Form">
@@ -90,51 +157,54 @@
             <input type="text" id="lname" name="lname" value="phone Number"><br><br>
 
             <label for="cookies">Choose a cookie:</label>
-            <select id="cookies" name="cookies">
+            <select id="cookiesForm" name="cookies">
                 <option value="cookies">cookies:</option>
                 <option value="red velvet">red velvet</option>
                 <option value="oreo">oreo</option>
                 <option value="snickers">snickers</option>
-                <option value="brownies">brownies</option>
+
                 <option value="cookie_cake">cookie_cake</option>
                 <option value="lemon">lemon</option>
-                <option value="bounty">bounty</option>
+
                 <option value="Lotus">Lotus</option>
-                <option value="choclat_chips">choclat_chips</option>
+
             </select>
 
         </form>
         <input id="formCookie" type="submit" value="Submit">
     </div>
+    <section id="Contact">
+        <h3 id="contactTitle"> Contact Us</h3>
 
-    <div class="order">
-        <button id="order">make you order</button>
-    </div>
+        <p id="contact_p"> If you have any questions or feedback, please don't hesitate to get in touch with us!
+            You can reach us by email at <b>Thebachkouta@gmail.com</b>
+
+            Alternatively, you can also connect with us on Instagram <b>TheBachkouta</b>, where we share updates,
+            news, and more.
+            We value your input and look forward to hearing from you!</p>
+        <img id="qr" src="./assets/QR.jpg" />
+    </section>
+
+
     <footer>
-        <div>
-            <h4>SHOP</h4>
-            <ul class="about">
-                <li>ABOUT</li>
-                <li>FAQ</li>
-                <li>SHIPPING/PICKUP</li>
-                <li>STORE POLICY</li>
-                <li>CONTACT US</li>
-            </ul>
-        </div>
+        <div class="footerContainer">
+            <div class="mediaContainer">
+                <h4>Social Media</h4>
+                <a id="facebook" href="https://www.facebook.com/Bachkoouta" class="fa fa-facebook"></a>
+                <a id="insta" href="https://www.instagram.com/the.bachkouta/" class="fa fa-instagram"></a>
+                <a id="gmail" href="thebashkouta@gmail.com" class="fa fa-google"></a>
+            </div>
 
-        <div>
-            <h3> ADRESS</h3>
-            <p> City khathra </p>
-        </div>
-        <div>
-            <h3>GET IT FRESH:</h3>
-            <div class="footerBtn">
-                <input type="email" value="Enter your e-mail here ..">
-                <button type="submit"> SUBSCRIBE NOW</button>
+            <div>
+                <h3> ADRESS</h3>
+                <p> City khathra </p>
             </div>
         </div>
+        <p>all rights reserved © 2023</p>
+
 
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

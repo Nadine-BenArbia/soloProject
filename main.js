@@ -50,7 +50,7 @@ var  products = [
 ];
  
 // create the cookies product list
-const productList = document.querySelector(".Cookies_List");
+var  productList = document.querySelector(".Cookies_List");
 products.forEach((product) => {
   const productDiv = document.createElement("div");
   productDiv.classList.add("product");

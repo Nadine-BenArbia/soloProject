@@ -1,4 +1,5 @@
 .topNav {
+  cursor: pointer;
   margin: 0 16%;
   display: flex;
   justify-content: space-between;

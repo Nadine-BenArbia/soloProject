@@ -12,57 +12,67 @@
     <link rel="icon" type="image/png" href="./assets/logo.jpg" />
     <title>Bachkouta</title>
 </head>
-<!--topnav -->
+  <!-- top nav -->
+  <nav class="topNav">
+    <p id="title">Bachkouta</p>
+    <div class="navItems">
+        <div class="search-box">
+            <input id="search" type="search" placeholder="SEARCH...">
+            <i class="fa fa-search"  onclick="search()"></i>
+            
 
+            <ul id="search-results">
 
-<body>
-    <nav class="topNav">
-        <p id="title">Bachkouta</p>
-        <div class="navItems">
-
-            <input id="search" type="search" value="SEARCH..."> <i class="fa fa-search"></i></input>
-            <i id="shoppingCart" class="fa fa-shopping-cart" style="font-size:24px"></i>
-            <div class="dropdown">
-                <i id="closeDrop" class="fa fa-close"></i>
-
+            </ul>
+            <!--
+            <i id="shoppingCart" class="fa fa-shopping-cart"></i>
+            <ul id="productList"></ul>
+            -->
+        </div>
+        
+        <!--
+        <div class="dropdown">
+            <i id="closeDrop" class="fa fa-close"></i>
+            <div class="cart">
+                <h2>Cart</h2>
+                <ul class="cart-items"></ul>
+                <div class="cart-footer">
+                    <p class="cart-total">Total: $0</p>
+                </div>
             </div>
-
-
         </div>
+        -->
+    </div>
+</nav>
+<button onclick="scrollToTop()" id="scrollBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+<!-- nav bar -->
+<nav class="nav_navBar">
+    <ul class="navList">
+        <li><a href="#title">HOME</a></li>
+        <li><a href="#getAll">Our Products</a></li>
+        <li><a href="#aboutUS">ABOUT Us</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+    </ul>
+</nav>
 
-    </nav>
-    <!--nav -->
-    <nav class="nav_navBar">
-        <ul class="navList">
-            <a href="#title">
-                <li id="home">HOME</li>
-            </a>
-            <a href="#getAll">
-                <li id="home">SHOP</li>
-            </a>
-            <a href="#aboutUS">
-                <li id="home">ABOUT Us</li>
-            </a>
-            <a href="#Contact">
-                <li id="home">CONTACT</li>
-            </a>
-        </ul>
-    </nav>
-    <section class="heroSeaction">
-        <img id="backgroundImg" src="./assets/background.png" alt="">
-        <div class="CallToAction">
-            <p id="heroP"> 100% NATURAL <br /> HOMEMADE FRESH COOKIES</p>
-            <button id="heroBtn"> order NOW</button>
-        </div>
-    </section>
-    <section class="BestSellers">
-        <h2 id="bestSellerTitle"> BEST SELLERS</h2>
-        <div class="bestSeller">
-            <img id="cookies" src="./assets/lemon cookie.jpg" alt="lemon" />
-            <img id="cookies" src="./assets/oreo.jpg" alt="oreo" />
-            <img id="cookies" src="./assets/lotus.jpg" alt="lotus" />
-        </div>
-    </section>
+<!-- hero section -->
+<section class="heroSeaction">
+    <img id="backgroundImg" src="./assets/background.png" alt="">
+    <div class="CallToAction">
+        <p id="heroP">100% NATURAL <br> HOMEMADE FRESH COOKIES</p>
+        <a href="#Contact"><button id="heroBtn">ORDER NOW</button></a>
+    </div>
+</section>
+
+<!-- best sellers section -->
+<section class="BestSellers">
+    <h2 id="bestSellerTitle">BEST SELLERS</h2>
+    <div class="bestSeller">
+        <img id="cookies" src="./assets/lemon cookie.jpg" alt="lemon">
+        <img id="cookies" src="./assets/oreo.jpg" alt="oreo">
+        <img id="cookies" src="./assets/lotus.jpg" alt="lotus">
+    </div>
+</section>
     <section id="aboutUS">
 
         <h2 id="aboutBachkouta">About Us</h2>
@@ -96,83 +106,17 @@
 
 
     </section>
-    <section class="Cookies"></section>
+    <section class="Cookies">
     <div class="Allcookies">
-        <h3 id="getAll">SHOP</h3>
+        <h3 id="getAll">Our Products</h3>
 
     </div>
+    </section>
     <div class="Cookies_List">
-
-        <div class="product">
-            <img src="./assets/332340187_5868929159857206_2814745815983228390_n.webp" alt="Redvelvet">
-            <p>Redvelvet</p>
-            <p>3600</p>
-            <button class="add-to-cart" product_id="1">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="./assets/335598893_901112211228583_1819133099813035427_n.webp" alt="Sneakers">
-            <p>Sneakers</p>
-            <p>4500</p>
-            <button class="add-to-cart" product_id="2">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="./assets/339686413_164924926466530_220648748350103497_n.webp" alt="Cookie Cake">
-            <p>Cookie Cake</p>
-            <p>25000</p>
-            <button class="add-to-cart" product_id="3">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="./assets/lemon cookie.jpg" alt="Lemon">
-            <p>Lemon</p>
-            <p>4000</p>
-            <button class="add-to-cart" product_id="4">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="./assets/lotus.jpg" alt="Lotus">
-            <p>Lotus</p>
-            <p>6000</p>
-            <button class="add-to-cart" product_id="5">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="./assets/oreo.jpg" alt="Oreo">
-            <p>Oreo</p>
-            <p>4500</p>
-            <button class="add-to-cart" product_id="6">Add to Cart</button>
-        </div>
-
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
 
-    <div class="formContainer">
-        <i id="closeIcon" class="fa fa-close"></i>
-        <form class="Form">
-            <label for="fname">Full Name:</label><br>
-            <input type="text" id="fname" name="fname" value="Name.."><br>
-            <label for="lname">adress:</label><br>
-            <input type="text" id="lname" name="lname" value="adress"><br><br>
-            <label for="lname">phone Number:</label><br>
-            <input type="text" id="lname" name="lname" value="phone Number"><br><br>
 
-            <label for="cookies">Choose a cookie:</label>
-            <select id="cookiesForm" name="cookies">
-                <option value="cookies">cookies:</option>
-                <option value="red velvet">red velvet</option>
-                <option value="oreo">oreo</option>
-                <option value="snickers">snickers</option>
-
-                <option value="cookie_cake">cookie_cake</option>
-                <option value="lemon">lemon</option>
-
-                <option value="Lotus">Lotus</option>
-
-            </select>
-
-        </form>
-        <input id="formCookie" type="submit" value="Submit">
-    </div>
+    
     <section id="Contact">
         <h3 id="contactTitle"> Contact Us</h3>
 

@@ -111,10 +111,15 @@ function search() {
     searchResultsList.appendChild(listItem);
   });
 
-  // Display list
+  // Display 
   searchResultsList.style.display = "block";
 }
 
+var searchResults = document.getElementById('search-results');
+
+searchResults.addEventListener('mouseleave', () => {
+  searchResults.style.display = 'none';
+});
 
 
 

@@ -99,7 +99,8 @@ function search() {
   console.log("filter",filteredProducts)
   var searchResultsList = document.getElementById("search-results");
 
-
+  // Clear list
+  searchResultsList.innerHTML = "";
 
   // Add to list
   filteredProducts.forEach(function(product) {

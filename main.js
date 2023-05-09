@@ -94,12 +94,12 @@ function search() {
   var searchTerm = document.getElementById("search").value.toLowerCase();
   var filteredProducts = products.filter(function(product) {
     return product.name.toLowerCase().indexOf(searchTerm) !== -1;
+    
   });
-
+  console.log("filter",filteredProducts)
   var searchResultsList = document.getElementById("search-results");
 
-  // Clear list
-  searchResultsList.innerHTML = "";
+
 
   // Add to list
   filteredProducts.forEach(function(product) {
